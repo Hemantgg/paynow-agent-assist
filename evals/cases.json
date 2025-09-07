@@ -1,0 +1,7 @@
+[
+  { "name": "allow_small_safe", "input": { "customerId": "c_999", "amount": 10, "currency": "USD", "payeeId": "p_safe", "idempotencyKey": "e1" }, "expect": "allow" },
+  { "name": "block_insufficient", "input": { "customerId": "c_123", "amount": 999, "currency": "USD", "payeeId": "p_safe", "idempotencyKey": "e2" }, "expect": "block" },
+  { "name": "review_disputes", "input": { "customerId": "c_123", "amount": 50, "currency": "USD", "payeeId": "p_789", "idempotencyKey": "e3" }, "expect": "review" },
+  { "name": "block_high_risk_payee", "input": { "customerId": "c_999", "amount": 20, "currency": "USD", "payeeId": "p_999", "idempotencyKey": "e4" }, "expect": "block" },
+  { "name": "review_above_threshold", "input": { "customerId": "c_123", "amount": 250, "currency": "USD", "payeeId": "p_safe", "idempotencyKey": "e5" }, "expect": "review" }
+]

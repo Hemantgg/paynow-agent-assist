@@ -1,0 +1,48 @@
+# Node modules
+node_modules/
+ui/node_modules/
+
+# Build output
+dist/
+ui/.next/
+ui/out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+
+# Env files
+.env
+.env.*
+
+# Test coverage
+coverage/
+ui/coverage/
+
+# IDE files
+.vscode/
+.idea/
+
+# Misc
+*.local
+*.log
+
+# Next.js build artifacts
+ui/.next/
+
+# Jest coverage
+coverage/
+ui/coverage/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Mac system files
+.DS_Store
+
+# Optional: ignore local test results
+*.test-results.json
